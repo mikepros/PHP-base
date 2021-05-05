@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    border: 0;
+    color: #040
+}
+
+div.center, h2, #page {
+    border-color: rgb(50, 150, 100);
+    border-style: solid;
+}
+
+div.center {
+    max-width: 60%;
+    margin: auto;
+    background-color: #aed3b3;
+    border-radius: 16px;
+    border-width: 5px;
+}
+
+h1, h2{
+    text-align: center;
+    padding: 15px;
+}
+
+h2 {
+    width: 100%;
+    margin: -2px -3px;
+    border-radius: 16px;
+    border-width: 3px;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 1%;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.disappear {
+    animation: disappear 3s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes disappear {
+    to {opacity: 0;}
+}
+
+ input[type=submit], a:link, a:visited {
+    background-color: white;
+    border: 2px solid green;
+    padding: 7px 6px;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 30%;
+}
+
+a:link, a:visited {
+    min-width: auto;
+}
+
+a:hover, input[type=submit]:hover, a:active {
+    background-color: green;
+    color: white;
+}
+
+form {
+    margin: 0 20px;
+}
+
+input[type=radio] {
+    margin: 2%;
+}
+
+#page {
+    max-width: 50%;
+    margin: auto;
+    border-width: 2px;
+    border-radius: 16px 16px 0 0;
+}

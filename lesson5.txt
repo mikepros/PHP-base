@@ -1,0 +1,38 @@
+MySQL http://sql-ex.ru
+
+4)
+SELECT *
+FROM printer
+WHERE color='y'
+
+5)
+SELECT DISTINCT model,speed,hd
+FROM pc
+WHERE (cd='12x' OR cd='24x') AND price<600
+
+8)
+SELECT DISTINCT maker
+FROM product
+WHERE type = 'pc'
+EXCEPT
+SELECT DISTINCT maker
+FROM product
+WHERE type = 'laptop'
+
+9)
+SELECT DISTINCT product.maker
+FROM product JOIN pc on product.model = pc.model
+WHERE product.type = 'pc' AND pc.speed>=450
+
+31)
+SELECT classes.class, classes.country
+FROM classes
+WHERE bore>=16
+
+34)
+SELECT name
+FROM ships,classes
+WHERE displacement>35000 AND launched>=1922
+AND type='bb' AND
+ships.class = classes.class
+
